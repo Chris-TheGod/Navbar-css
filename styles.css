@@ -181,3 +181,34 @@ nav a:focus {
 .article-recent-secondary {
   order: 1;
 }
+
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+    width: 68%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
+    min-height: 250px;
+    object-fit: cover;
+    /* object-position: left; */
+  }
+
+  .article-info {
+    order: -1;
+  }
+}
